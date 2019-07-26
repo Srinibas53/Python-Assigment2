@@ -1,0 +1,6 @@
+s1="Army "
+s2="   MAry"
+if  sorted(s1.upper().strip()) == sorted(s2.upper().strip()): 
+        print("The strings are anagrams.")  
+else: 
+        print("The strings aren't anagrams.")   
