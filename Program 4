@@ -1,0 +1,8 @@
+string = 'ksdkdkdksdksksksskddsdksdksdksdksdkojhtrcv'
+a={}
+for i in string:
+   if i in a:
+       a[i] = a[i]+1
+   else:
+       a[i] = 0
+print(max(a.values()))
