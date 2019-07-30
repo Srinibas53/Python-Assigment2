@@ -1,0 +1,13 @@
+number=[1,2,3,5,4]
+output=[]
+n = len(number) 
+countOdd = 0
+for i in range(n): 
+    if (number[i] % 2): 
+        countOdd += 1
+        count= min(countOdd, n - countOdd)
+    else:
+         output.append(number[i])
+        
+print(count)
+print(output)
