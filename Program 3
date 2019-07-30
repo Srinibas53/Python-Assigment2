@@ -1,0 +1,16 @@
+string3 = "dabecf"
+string2 = "def"
+string1 = "abc"
+if len(string3) != len(string1) + len(string2):
+    print("not a valid shuffle")
+i1 = i2 = i3 = 0
+while i1 < len(string1) and i2 < len(string2):
+    c_char = string3[i3]
+    if string1[i1] == c_char:
+        i1 += 1
+    elif string2[i2] == c_char:
+        i2 += 1
+    else:
+        print("not a valid shuffle")
+    i3 += 1
+print("valid shuffle")
