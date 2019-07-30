@@ -1,0 +1,8 @@
+list1 =[-1,0,1,2,3,4,5,6,7]
+sublist = []   
+for i in range(0, len(list1)+1 ):   
+    for j in range(i + 1, len(list1) + 1): 
+        sub = list1[i:j]
+        if sum(sub)==0:
+            sublist.append(sub)
+print(sublist)           
