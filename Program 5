@@ -1,0 +1,12 @@
+string = 'abbbbacccadd'
+new=[]
+for i in string:
+    if len(new)==0:
+        new.append(i)
+    elif len(new) >0:
+        if new[-1] == i:
+            new.remove(i)
+        elif new[-1]!=i:
+            new.append(i)
+
+print (''.join(new))
